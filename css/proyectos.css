@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    background: #4280dd;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #080808;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+/*------------------------------------------------*/
+
+.container-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: linear-gradient(10deg, #13917E, #ff5de0);
+    border-radius: 0% 0% 0% 100%;
+    padding: 26px 26px 52px 52px;
+    transition: all 2s;
+}
+
+.icon-menu{
+    color: white;
+    font-size: 30px;
+}
+
+.icon-close{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 26px;
+    left: 26px;
+}
+
+.menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a {
+    padding: 26px;
+    font-size: 34px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.menu a:before{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 86px;
+    left: 50%;
+    background: white;
+    transition: all 300ms;
+}
+
+.menu a:hover:before{
+    width: 100%;
+    left: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
